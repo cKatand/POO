@@ -46,16 +46,16 @@ let n_casa = "11689";
 let mensaje = "direccion: " + direccion + " " + n_casa;
 let longitud = mensaje.length;
 alert("Mensaje: " + mensaje +"\nLongitud: " + longitud +"\nAntepenultimo caracter: " + $(mensaje(mensaje.length[-3])));
-
+}
 // Ejercicio 5: Suma De Valores
 // Instrucciones:  Crear un Parrafo <p> con la siguiente descripción:
 //“Suma de Valores tomando índices de un arreglo”
-function sumaIndices() {
+function sumaIndices(){
     // Tu código aquí
     let valor = [1,2,3,4,5,6,7];
     let ultimoValor =  valor[valor.length -1];
-    let penultimoValor = valor[valor.length -3];
+    let penultimoValor = valor[valor.length -2];
     let primerValor = valor[0];
     suma = ultimoValor + penultimoValor + primerValor;
-    alert("Resultado de la suma de los indices es: ${suma}");
-}
+    alert(`Resultado de la suma de los indices es: ${suma}`);
+    }
